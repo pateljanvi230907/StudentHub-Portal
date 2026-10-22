@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "name": "Hackathon",
+        "date": "2026-08-20",
+        "venue": "Seminar Hall",
+        "category": "Technical",
+        "description": "A college level coding and innovation hackathon."
+    },
+    {
+        "id": 2,
+        "name": "AI Workshop",
+        "date": "2026-08-25",
+        "venue": "Computer Lab",
+        "category": "Technical",
+        "description": "Workshop on Artificial Intelligence and Machine Learning."
+    },
+    {
+        "id": 3,
+        "name": "Coding Competition",
+        "date": "2026-08-30",
+        "venue": "Lab 2",
+        "category": "Technical",
+        "description": "Programming competition for students."
+    },
+    {
+        "id": 4,
+        "name": "Sports Day",
+        "date": "2026-09-05",
+        "venue": "College Ground",
+        "category": "Sports",
+        "description": "Annual sports activities and competitions."
+    },
+    {
+        "id": 5,
+        "name": "Cultural Fest",
+        "date": "2026-09-10",
+        "venue": "Main Ground",
+        "category": "Cultural",
+        "description": "Annual cultural festival with music, dance and performances."
+    },
+    {
+        "id": 6,
+        "name": "Web Development Workshop",
+        "date": "2026-09-15",
+        "venue": "Seminar Hall",
+        "category": "Technical",
+        "description": "Hands-on workshop on modern web development."
+    },
+    {
+        "id": 7,
+        "name": "Photography Contest",
+        "date": "2026-09-20",
+        "venue": "Arts Block",
+        "category": "Cultural",
+        "description": "Photography competition for college students."
+    },
+    {
+        "id": 8,
+        "name": "Cricket Tournament",
+        "date": "2026-09-25",
+        "venue": "College Ground",
+        "category": "Sports",
+        "description": "Inter-class cricket tournament."
+    },
+    {
+        "id": 9,
+        "name": "Robotics Workshop",
+        "date": "2026-10-01",
+        "venue": "Innovation Lab",
+        "category": "Technical",
+        "description": "Introduction to robotics and automation."
+    },
+    {
+        "id": 10,
+        "name": "Debate Competition",
+        "date": "2026-10-05",
+        "venue": "Seminar Hall",
+        "category": "Academic",
+        "description": "Inter-college debate competition."
+    },
+    {
+        "id": 11,
+        "name": "Career Guidance Seminar",
+        "date": "2026-10-10",
+        "venue": "Auditorium",
+        "category": "Academic",
+        "description": "Career guidance session for students."
+    },
+    {
+        "id": 12,
+        "name": "Music Night",
+        "date": "2026-10-15",
+        "venue": "Main Ground",
+        "category": "Cultural",
+        "description": "An evening of music and student performances."
+    }
+]

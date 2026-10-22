@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Settings</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+
+<body>
+
+        <header>
+        <h1 align="center">StudentHub Portal</h1>
+        <hr>
+        <table width="100%">
+            <tr>
+                <td width="8%">
+                        <nav>
+                                <a href="home.html">Home</a>
+                        </nav>
+                </td>
+
+                <td width="45%">
+                    <input type="search" placeholder="Search..." size="40">
+                </td>
+
+                <td align="center" class="logo-cell">
+                <img src="da9cbd3c-384f-4191-b633-f761fbc19138.png" alt="StudentHub Logo" class="studenthub-logo">
+                </td>
+
+                <td align="center">
+
+                    <a href="Myprofile.html">Profile</a>
+
+                </td>
+
+                <td align="center">
+
+                    <a href="setting.html">Settings</a>
+
+                </td>
+
+            </tr>
+
+        </table>
+
+        <hr>
+
+    </header>
+
+    <main>
+
+        <h2 align="center">Account Settings</h2>
+
+        <form action="profile.html" method="get">
+
+            <fieldset>
+
+                <legend><b>Profile Settings</b></legend>
+
+                <label for="name">Full Name</label><br>
+                <input type="text" id="name" name="name" value="Janvi Patel" required>
+
+                <br><br>
+
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" value="janvi@gmail.com" required>
+
+                <br><br>
+
+                <label for="mobile">Mobile Number</label><br>
+                <input type="tel" id="mobile" name="mobile" value="9876543210" pattern="[0-9]{10}" required>
+
+                <br><br>
+
+                <label for="password">Change Password</label><br>
+                <input type="password" id="password" name="password" placeholder="Enter New Password" minlength="8">
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+
+                <legend><b>Notification Settings</b></legend>
+
+                <input type="checkbox" id="emailnotify" checked>
+                <label for="emailnotify">Email Notifications</label>
+
+                <br><br>
+
+                <input type="checkbox" id="eventnotify" checked>
+                <label for="eventnotify">Event Notifications</label>
+
+                <br><br>
+
+                <input type="checkbox" id="resultnotify">
+                <label for="resultnotify">Result Notifications</label>
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+
+                <legend><b>Account Preferences</b></legend>
+
+                <label>Theme</label><br>
+
+                <input type="radio" id="light" name="theme" checked>
+                <label for="light">Light</label>
+
+                <input type="radio" id="dark" name="theme">
+                <label for="dark">Dark</label>
+
+                <br><br>
+
+                <label for="language">Language</label><br>
+
+                <select id="language" name="language">
+                    <option>English</option>
+                    <option>Hindi</option>
+                    <option>Gujarati</option>
+                </select>
+
+            </fieldset>
+
+            <br>
+
+            <input type="submit" value="Save Changes">
+            <input type="reset" value="Reset">
+
+        </form>
+
+        <hr>
+
+        <aside>
+
+            <h3>Security Tips</h3>
+
+            <ul>
+                <li>Use a strong password.</li>
+                <li>Do not share your login credentials.</li>
+                <li>Update your password regularly.</li>
+                <li>Keep your contact details updated.</li>
+            </ul>
+
+        </aside>
+
+    </main>
+
+    <hr>
+
+    <footer>
+
+        <table width="100%">
+
+            <tr>
+
+                <td>
+                    <h3>Contact Us</h3>
+                    <p>Email : studenthub@gmail.com</p>
+                    <p>Phone : +91 9876543210</p>
+                </td>
+
+                <td align="center">
+                    <h3>Follow Us</h3>
+                    <a href="#">Facebook</a> |
+                    <a href="#">Instagram</a> |
+                    <a href="#">LinkedIn</a>
+                </td>
+
+            </tr>
+
+        </table>
+
+        <hr>
+
+        <p align="center">&copy 2026 StudentHub Portal</p>
+
+    </footer>
+     <script src="script.js"></script>
+</body>
+
+</html>

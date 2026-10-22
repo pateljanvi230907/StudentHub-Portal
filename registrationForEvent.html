@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 align="center">Event Registration</h1>
+        <hr>
+    </header>
+
+    <main>
+        <center>
+
+            <form action="process_event_registration.php" method="POST" enctype="multipart/form-data" autocomplete="on">
+
+                <fieldset>
+                    <legend><b>Student Details</b></legend>
+
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname"
+                        placeholder="Enter Full Name"
+                        required><br><br>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email"
+                        placeholder="student@gmail.com"
+                        required><br><br>
+
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob"
+                        required><br><br>
+
+                    <label>Gender</label>
+
+                    <input type="radio" id="male"
+                        name="gender" value="Male" required>
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female"
+                        name="gender" value="Female">
+                    <label for="female">Female</label>
+
+                    <input type="radio" id="other"
+                        name="gender" value="Other">
+                    <label for="other">Other</label>
+
+                    <br><br>
+
+                    <label for="blood">Blood Group</label>
+
+                    <select id="blood" name="blood" required>
+
+                        <option value="">Select Blood Group</option>
+                        <option>A+</option>
+                        <option>A-</option>
+                        <option>B+</option>
+                        <option>B-</option>
+                        <option>AB+</option>
+                        <option>AB-</option>
+                        <option>O+</option>
+                        <option>O-</option>
+
+                    </select>
+
+                    <br><br>
+
+                    <label for="mobile">Mobile Number</label>
+
+                    <input type="tel"
+                        id="mobile"
+                        name="mobile"
+                        placeholder="9876543210"
+                        pattern="[0-9]{10}"
+                        required>
+
+                    <br><br>
+
+                    <label for="address">Address</label>
+
+                    <textarea id="address"
+                        name="address"
+                        rows="4"
+                        cols="30"
+                        placeholder="Enter Address"></textarea>
+
+                    <br><br>
+
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+
+                    <legend><b>Event Registration Details</b></legend>
+
+                    <label for="studentId">StudentId Number</label>
+
+                    <input type="text"
+                        id="studentId"
+                        name="studentId"
+                        placeholder="Enter StudentId Number"
+                        required>
+
+                    <br><br>
+
+                    <label for="university">University</label>
+
+                    <input type="text"
+                        id="university"
+                        name="university"
+                        placeholder="Enter University Name"
+                        required>
+
+                    <br><br>
+
+                    <label for="college">College Name</label>
+
+                    <input type="text"
+                        id="college"
+                        name="college"
+                        placeholder="Enter College Name"
+                        required>
+
+                    <br><br>
+
+                    <label for="department">Department</label>
+
+                    <select id="department" name="department" required>
+
+                        <option value="">Select Department</option>
+                        <option>Computer Engineering</option>
+                        <option>Information Technology</option>
+                        <option>Mechanical Engineering</option>
+                        <option>Civil Engineering</option>
+                        <option>Electrical Engineering</option>
+
+                    </select>
+
+                    <br><br>
+
+                    <label for="semester">Semester</label>
+
+                    <select id="semester" name="semester" required>
+
+                        <option value="">Select Semester</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+
+                    </select>
+
+                    <br><br>
+
+                    <label for="event">Event Name</label>
+
+                    <select id="event" name="event" required>
+
+                        <option value="">Select Event</option>
+                        <option>Hackathon</option>
+                        <option>Coding Competition</option>
+                        <option>Workshop</option>
+                        <option>Sports Day</option>
+                        <option>Technical Quiz</option>
+
+                    </select>
+
+                    <br><br>
+
+                    <label for="team">Participation Type</label>
+
+                    <input type="radio"
+                        id="solo"
+                        name="team"
+                        value="Solo"
+                        required>
+
+                    <label for="solo">Solo</label>
+
+                    <input type="radio"
+                        id="team"
+                        name="team"
+                        value="Team">
+
+                    <label for="team">Team</label>
+
+                    <br><br>
+
+                    <label for="members">Number of Team Members</label>
+
+                    <input type="number"
+                        id="members"
+                        name="members"
+                        min="1"
+                        max="10">
+
+                    <br><br>
+
+                    <label for="leader">Team Leader Name</label>
+
+                    <input type="text"
+                        id="leader"
+                        name="leader"
+                        placeholder="Enter Team Leader Name">
+
+                    <br><br>
+
+                    <label for="idcard">College ID Card</label>
+
+                    <input type="file"
+                        id="idcard"
+                        name="idcard"
+                        accept=".pdf,.jpg,.jpeg,.png"
+                        required>
+
+                    <br><br>
+
+                    <label for="payment">Registration Fee</label>
+
+                    <select id="payment" name="payment" required>
+
+                        <option value="">Select Payment Status</option>
+                        <option>Paid</option>
+                        <option>Pending</option>
+
+                    </select>
+
+                    <br><br>
+
+                    <label for="transaction">Transaction ID</label>
+
+                    <input type="text"
+                        id="transaction"
+                        name="transaction"
+                        placeholder="Enter Transaction ID">
+
+                    <br><br>
+
+                    <label for="remarks">Remarks</label>
+
+                    <textarea id="remarks"
+                        name="remarks"
+                        rows="3"
+                        cols="35"
+                        placeholder="Any special requirements"></textarea>
+
+                </fieldset>
+
+                <br>
+
+                <input type="checkbox"
+                    id="agree"
+                    name="agree"
+                    value="yes"
+                    required>
+
+                <label for="agree">
+                    I agree to the Terms and Conditions
+                </label>
+
+                <br><br>
+
+                <input type="submit" value="Register">
+
+                <input type="reset" value="Clear">
+
+            </form>
+
+        </center>
+    </main>
+
+    <footer>
+
+        <hr>
+
+        <center>
+
+            <p>&copy 2026 StudentHub Portal</p>
+
+        </center>
+
+    </footer>
+
+</body>
+
+</html>

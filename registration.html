@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub Registration</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fb;
+            padding: 25px
+        }
+
+        main {
+            max-width: 600px;
+            margin: auto
+        }
+
+        form {
+            background: white;
+            padding: 25px;
+            border-radius: 10px
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            box-sizing: border-box
+        }
+
+        input[type=checkbox] {
+            width: auto
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #174ea6;
+            color: white;
+            border: 0;
+            cursor: pointer
+        }
+
+        .error {
+            color: red
+        }
+        
+.gender-options {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.gender-options label {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+    font-weight: normal;
+}
+
+.gender-options input[type="radio"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Student Registration Form</h1>
+        <form action="process_registration.php" method="POST" id="registrationForm">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required pattern=""
+                title="Enter first and last name">
+
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required minlength="3" maxlength="50"
+                pattern="[A-Za-z0-9_]+" title="Use letters, numbers, and underscores only">
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required maxlength="100">
+
+            <label for="mobile">Mobile Number</label>
+            <input type="tel" id="mobile" name="mobile" required pattern="[6-9][0-9]{9}"
+                title="Enter a valid 10-digit mobile number">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required minlength="8"
+                pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@$!%*?&]).{8,}"
+                title="Use uppercase, lowercase, number and special character">
+
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required minlength="8">
+
+            <label for="course">Course</label>
+            <select id="course" name="course" required>
+                <option value="">Select Course</option>
+                <option value="Computer Engineering">Computer Engineering</option>
+                <option value="Information Technology">Information Technology</option>
+                <option value="Computer Science And Engineering">Computer Science And Engineering</option>
+            </select>
+
+            <label for="year">Year</label>
+            <select id="year" name="year" required>
+                <option value="">Select Year</option>
+                <option value="1">First Year</option>
+                <option value="2">Second Year</option>
+                <option value="3">Third Year</option>
+                <option value="4">Fourth Year</option>
+            </select>
+
+            <label>Gender</label>
+            <div class="gender-options">
+            <label><input type="radio" name="gender" value="Male" required> Male</label>
+            <label><input type="radio" name="gender" value="Female"> Female</label>
+            <label><input type="radio" name="gender" value="Other"> Other</label>
+            </div>
+            <p>
+                <label><input type="checkbox" name="terms" value="Accepted" required> I accept the Terms and
+                    Conditions</label>
+            </p>
+
+            <button type="submit">Register</button>
+            <button type="reset">Clear</button>
+        </form>
+        <p><a href="process_registration.php?action=view">View Stored Registrations</a></p>
+    </main>
+    <script>
+        document.getElementById("registrationForm").addEventListener("submit", function (event) {
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirmPassword").value;
+            if (password !== confirmPassword) {
+                event.preventDefault();
+                alert("Passwords do not match.");
+            }
+        });
+    </script>
+</body>
+
+</html>

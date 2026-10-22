@@ -1,0 +1,966 @@
+/* ==================================================
+   StudentHub Portal
+   Common External CSS
+   ================================================== */
+
+
+/* ==================================================
+   GENERAL
+   ================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+a {
+    color: #174ea6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+a:hover {
+    color: #0b3d91;
+    text-decoration: underline;
+}
+
+h1,
+h2,
+h3 {
+    color: #123b6d;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #cfd8e3;
+    margin: 20px 0;
+}
+
+
+/* ==================================================
+   HEADER
+   ================================================== */
+
+header {
+    background-color: white;
+    padding: 15px 25px;
+    border-bottom: 3px solid #174ea6;
+    position: relative;
+    z-index: 100;
+}
+
+header h1 {
+    margin: 5px 0 15px;
+    color: #174ea6;
+    font-size: 30px;
+}
+
+header table {
+    border-collapse: collapse;
+}
+
+header td {
+    padding: 10px;
+    vertical-align: middle;
+}
+
+header input[type="search"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 14px;
+    border: 1px solid #b8c4d1;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s;
+}
+
+header input[type="search"]:focus {
+    border-color: #174ea6;
+    box-shadow: 0 0 5px rgba(23, 78, 166, 0.2);
+}
+
+header b {
+    font-size: 20px;
+    color: #174ea6;
+}
+
+/* ---------- StudentHub Logo ---------- */
+
+.logo-cell {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.studenthub-logo {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+
+/* ==================================================
+   HOME MENU
+   ================================================== */
+
+/*
+   This container is the reference point
+   for the dropdown menu.
+*/
+
+.menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* Three-line menu button */
+
+.menu-button {
+    background-color: transparent;
+    color: #174ea6;
+    border: 1px solid #174ea6;
+    border-radius: 5px;
+    padding: 6px 10px;
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+    margin: 0;
+}
+
+.menu-button:hover {
+    background-color: #174ea6;
+    color: white;
+}
+
+
+/*
+   Dropdown menu
+
+   IMPORTANT:
+   position: absolute means the menu does NOT
+   push the header or other content downward.
+*/
+
+.side-menu {
+    display: none;
+
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+
+    width: 210px;
+
+    background-color: white;
+
+    border: 1px solid #cfd8e3;
+    border-radius: 8px;
+
+    padding: 15px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+    z-index: 9999;
+}
+
+
+/*
+   Open menu when mouse is over menu container.
+*/
+
+.menu-container:hover .side-menu {
+    display: block;
+}
+
+
+/* Menu heading */
+
+.side-menu h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+
+    padding-bottom: 8px;
+
+    border-bottom: 2px solid #174ea6;
+
+    color: #174ea6;
+}
+
+
+/* Dashboard */
+
+.side-menu > a {
+    display: block;
+
+    padding: 8px 10px;
+
+    border-radius: 4px;
+
+    color: #174ea6;
+}
+
+.side-menu > a:hover {
+    background-color: #eef5ff;
+    text-decoration: none;
+}
+
+
+/* Menu list */
+
+.side-menu ul {
+    list-style-type: none;
+
+    padding: 0;
+    margin: 5px 0 0;
+}
+
+.side-menu li {
+    margin: 0;
+}
+
+.side-menu li a {
+    display: block;
+
+    padding: 8px 10px;
+
+    border-radius: 4px;
+
+    color: #333;
+}
+
+.side-menu li a:hover {
+    background-color: #eef5ff;
+    color: #174ea6;
+
+    text-decoration: none;
+}
+
+
+/* ==================================================
+   MAIN
+   ================================================== */
+
+main {
+    width: 92%;
+    max-width: 1200px;
+
+    margin: 25px auto;
+}
+
+main > h2 {
+    background-color: white;
+
+    padding: 15px;
+
+    border-left: 5px solid #174ea6;
+
+    border-radius: 5px;
+}
+
+
+/* ==================================================
+   TABLES
+   ================================================== */
+
+table {
+    border-collapse: collapse;
+}
+
+main table {
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+}
+
+main table th {
+    background-color: #174ea6;
+    color: white;
+
+    padding: 12px;
+
+    text-align: left;
+}
+
+main table td {
+    padding: 10px;
+
+    border: 1px solid #d4dce5;
+}
+
+main table tr:nth-child(even) {
+    background-color: #f7f9fc;
+}
+
+main table tr:hover {
+    background-color: #eef5ff;
+}
+
+
+/* ==================================================
+   HOME BANNER
+   ================================================== */
+
+.home-banner {
+    background-color: white;
+    border: 1px solid #d5dce5;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+
+    border-radius: 8px;
+
+    overflow: hidden;
+}
+
+.home-banner h2 {
+    margin-top: 15px;
+    color: #174ea6;
+}
+
+.home-banner img {
+    max-width: 100%;
+    height: 250px;
+    object-fit: cover;
+
+    border-radius: 6px;
+}
+
+
+/* ==================================================
+   ANNOUNCEMENTS
+   ================================================== */
+
+.announcement-box {
+    background-color: white;
+
+    border: 1px solid #d5dce5;
+
+    border-radius: 8px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.announcement-box h2 {
+    color: #174ea6;
+}
+
+.announcement-box marquee {
+    color: #333;
+    font-weight: bold;
+}
+
+
+/* ==================================================
+   SECTIONS
+   ================================================== */
+
+section,
+aside,
+article {
+    margin-bottom: 20px;
+}
+
+section h2,
+section h3,
+aside h3 {
+    color: #174ea6;
+}
+
+section h3 {
+    border-bottom: 2px solid #d5e2f2;
+    padding-bottom: 8px;
+}
+
+
+/* ==================================================
+   FORMS
+   ================================================== */
+
+form {
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+fieldset {
+    border: 1px solid #b8c4d1;
+
+    border-radius: 8px;
+
+    padding: 20px;
+
+    margin-bottom: 15px;
+}
+
+legend {
+    color: #174ea6;
+    padding: 0 8px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="tel"],
+input[type="number"],
+input[type="file"],
+select,
+textarea {
+    padding: 9px;
+
+    margin-top: 5px;
+
+    border: 1px solid #b8c4d1;
+
+    border-radius: 5px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    transition: 0.2s;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+    max-width: 500px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+
+    border-color: #174ea6;
+
+    box-shadow: 0 0 5px rgba(23, 78, 166, 0.15);
+}
+
+
+/* ==================================================
+   BUTTONS
+   ================================================== */
+
+input[type="submit"],
+input[type="reset"],
+button {
+    padding: 10px 18px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    margin-right: 8px;
+
+    transition: 0.2s;
+}
+
+input[type="submit"],
+button {
+    background-color: #174ea6;
+    color: white;
+}
+
+input[type="reset"] {
+    background-color: #6c757d;
+    color: white;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #0d397a;
+}
+
+input[type="reset"]:hover {
+    background-color: #495057;
+}
+
+
+/* ==================================================
+   REGISTRATION FORM
+   ================================================== */
+
+form[autocomplete="on"] {
+    max-width: 850px;
+    margin: auto;
+}
+
+form[autocomplete="on"] fieldset {
+    text-align: left;
+}
+
+
+/* ==================================================
+   EVENT PAGE
+   ================================================== */
+
+main table td img {
+    max-width: 150px;
+    height: 150px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+}
+
+main table td h3 {
+    margin-bottom: 5px;
+}
+
+main table td form {
+    padding: 5px;
+    background: transparent;
+    box-shadow: none;
+}
+
+
+/* ==================================================
+   PROFILE PAGE
+   ================================================== */
+
+img[alt="Profile Photo"] {
+    border-radius: 50%;
+
+    border: 3px solid #174ea6;
+
+    object-fit: cover;
+}
+
+
+/* ==================================================
+   LISTS
+   ================================================== */
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 7px;
+}
+
+
+/* ==================================================
+   ASIDE
+   ================================================== */
+
+aside {
+    background-color: white;
+
+    border-left: 5px solid #174ea6;
+
+    padding: 15px 20px;
+
+    border-radius: 5px;
+
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.05);
+}
+
+aside h3 {
+    margin-top: 0;
+}
+
+
+/* ==================================================
+   FAQ
+   ================================================== */
+
+details {
+    background-color: white;
+
+    border: 1px solid #d1d9e2;
+
+    border-radius: 6px;
+
+    padding: 12px 15px;
+
+    margin-bottom: 10px;
+}
+
+summary {
+    cursor: pointer;
+
+    color: #174ea6;
+
+    font-weight: bold;
+}
+
+details p {
+    padding-left: 15px;
+}
+
+
+/* ==================================================
+   ABOUT PAGE
+   ================================================== */
+
+address {
+    background-color: white;
+
+    padding: 20px;
+
+    border-left: 5px solid #174ea6;
+
+    font-style: normal;
+
+    border-radius: 5px;
+}
+
+
+/* ==================================================
+   RESULT PAGE
+   ================================================== */
+
+main a[download] {
+    display: inline-block;
+
+    background-color: #174ea6;
+
+    color: white;
+
+    padding: 9px 15px;
+
+    border-radius: 5px;
+
+    transition: 0.2s;
+}
+
+main a[download]:hover {
+    background-color: #0d397a;
+
+    text-decoration: none;
+}
+
+
+/* ==================================================
+   STATUS
+   ================================================== */
+
+.status-pass {
+    color: green;
+    font-weight: bold;
+}
+
+.status-pending {
+    color: #d97706;
+    font-weight: bold;
+}
+
+.status-fail {
+    color: red;
+    font-weight: bold;
+}
+
+
+/* ==================================================
+   ADMIN PAGE
+   ================================================== */
+
+.admin-table th {
+    background-color: #123b6d;
+}
+
+.admin-actions a {
+    margin-right: 8px;
+}
+
+
+/* ==================================================
+   DASHBOARD
+   ================================================== */
+
+.dashboard-table {
+    border: none;
+}
+
+.dashboard-table td {
+    border: none;
+}
+
+.dashboard-card {
+    background-color: white;
+
+    padding: 20px;
+
+    text-align: center;
+
+    border: 1px solid #d5dce5;
+
+    border-radius: 8px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+
+/* ==================================================
+   FOOTER
+   ================================================== */
+
+footer {
+    background-color: #123b6d;
+
+    color: white;
+
+    padding: 20px 5%;
+
+    margin-top: 30px;
+}
+
+footer h3,
+footer h4 {
+    color: white;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: #dceaff;
+}
+
+footer table {
+    width: 100%;
+}
+
+footer td {
+    padding: 10px;
+}
+
+footer hr {
+    border-top-color: #8fa8c4;
+}
+
+
+/* ==================================================
+   LOGIN PAGE
+   ================================================== */
+
+.login-container {
+    width: 90%;
+
+    max-width: 1000px;
+
+    margin: 40px auto;
+}
+
+.login-container table {
+    width: 100%;
+}
+
+.login-box {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.login-box h2 {
+    text-align: center;
+
+    color: #174ea6;
+}
+
+.login-box input[type="email"],
+.login-box input[type="password"] {
+    width: 100%;
+}
+
+.login-image {
+    text-align: center;
+
+    background-color: #eaf2ff;
+
+    padding: 40px;
+}
+
+
+/* ==================================================
+   RESPONSIVE DESIGN
+   ================================================== */
+
+@media (max-width: 768px) {
+
+    main {
+        width: 95%;
+    }
+
+    header table,
+    footer table {
+        width: 100%;
+    }
+
+    header td {
+        padding: 7px;
+    }
+
+    header input[type="search"] {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    main table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"],
+    input[type="tel"],
+    input[type="number"],
+    select,
+    textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    footer td {
+        display: block;
+        text-align: center;
+    }
+
+    .side-menu {
+        width: 190px;
+    }
+
+}
+
+
+/* ==================================================
+   SMALL SCREEN
+   ================================================== */
+
+@media (max-width: 500px) {
+
+    header {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 21px;
+    }
+
+    .menu-button {
+        font-size: 19px;
+    }
+
+    .side-menu {
+        width: 180px;
+    }
+
+    .home-banner img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+
+/* StudentHub Admin Navigation */
+
+/* Admin Dashboard Navigation */
+header nav.admin-navbar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #173F70;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+header nav.admin-navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 16px;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+header nav.admin-navbar a:hover {
+    background-color: #285A91;
+}
+
+header nav.admin-navbar a.active {
+    background-color: white;
+    color: #173F70;
+}
+
+header nav.admin-navbar a.logout-link {
+    background-color: #B83232;
+}
+
+header nav.admin-navbar a.logout-link:hover {
+    background-color: #922525;
+}
+
+@media (max-width: 700px) {
+    header nav.admin-navbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    header nav.admin-navbar a {
+        text-align: center;
+        margin-right: 50px;
+
+    }
+    
+}
+
+.admin-navbar a {
+    margin-right: 20px;
+}
